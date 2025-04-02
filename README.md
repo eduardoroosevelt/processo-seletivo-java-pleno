@@ -76,12 +76,35 @@ http://localhost:8083/apiseletivo/swagger-ui/index.html#/
    - 7.1 - Utilize o serviço **POST /servidor-efetivo** para criar um novo servidor efetivo.
         - 7.1.1- Na criação de um servidor efetivo é necessário informar a pessoa completa.
         - 7.1.2- Na criação de um servidor efetivo é necessário passar uma lista de endereços completa
-   - 7.2 - Verifique os servidores efetivos existentes: Utilize o serviço **GET /servidor-efetivo/paginado/all** para verificar as servidores efetivos que já existem de forma paginado e o serviço **GET servidor-efetivo/{pesId}** para buscar uma servidor efetivo específico.
+   - 7.2 - Verifique os servidores efetivos existentes: Utilize o serviço **GET /servidor-efetivo/** para verificar as servidores efetivos que já existem de forma paginado e o serviço **GET servidor-efetivo/{pesId}** para buscar uma servidor efetivo específico.
    - 7.3 - Utilize o serviço **PUT /servidor-efetivo/{pesId}** para atualizar um servidor
-   - 7.4 - Utilize o serviço **POST /servidor-efetivo/upload-fotos/{pesId}** para inserir uma ou mais fotos em um servidor efetivo
+   - 7.4 - Utilize o serviço **POST /servidor-efetivo/upload** para inserir uma ou mais fotos em um servidor efetivo
    - 7.5 - Utilize o serviço **DELETE /servidor-efetivo/{pesId}** para excluir uma servidor efetivo.
    - 7.6 - Utilize o serviço **GET /servidor-efetivo/endereco-funcional/**,que tem como parâmetro a variável nome, para buscar o endereco funcional a partir de uma parte do nome, apenas para servidores efetivos.
-   - 7.7 - Utilize o serviço **GET /servidor-efetivo/lotados-unidade/{unidId}** para buscar os servidores efetivos lotados em determinada unidade. Para ter resutados neste serviço primeiro é necessário criar alguma lotação **10. CRUD de Lotação**
+
+
+8. CRUD de Servidor Temporário
+   - 8.1 - Utilize o serviço **POST /servidor-temporario/** para criar um novo servidor temporário.
+        - 8.1.1- Na criação de um servidor temporário é necessário informar a pessoa completa.
+        - 8.1.2- Na criação de um servidor temporário é necessário passar uma lista de endereços completa
+   - 8.2 - Verifique os servidores temporários existentes: Utilize o serviço **GET /servidor-temporario/** para verificar as servidores temporários que já existem de forma paginado e o serviço **GET /servidor-temporario/{pesId}** para buscar uma servidor temporário específico.
+   - 8.3 - Utilize o serviço **PUT /servidor-temporario/{pesId}** para atualizar um servidor temporário.
+   - 8.4 - Utilize o serviço **POST /servidor-efetivo/upload** para inserir uma ou mais fotos em um servidor temporário.
+   - 8.5 -  Utilize o serviço **DELETE /servidor-temporario/{pesId}** para excluir um servidor temporário.
+
+9. CRUD de Lotação
+   - 9.1 - Utilize o serviço **POST /lotacao/** para criar uma nova lotação.
+        - 9.1.1- Na criação de uma lotação não é necessário informar a pessoa completa, somente o id da pessoa.
+        - 9.1.2- Na criação de uma lotação não é necessário informar a unidade completa, somente o id da unidade.
+   - 9.2 - Verifique as lotações existentes: Utilize o serviço **GET /lotacao** para verificar as lotações que já existem de forma paginado e o serviço **GET /lotacao/{lotId}** para buscar uma lotação específica.
+   - 9.3 - Utilize o serviço **PUT /lotacao/{lotId}** para atualizar uma lotação.
+   - 9.4 - Utilize o serviço **DELETE /lotacao/{lotId}** para excluir uma lotação.
+
+10. CRUD de Lotação
+  - 10.1 - Utilize o serviço **GET /consultas** para buscar os servidores efetivos lotados em determinada unidade. Para ter resutados neste serviço primeiro é necessário criar alguma lotação **9. CRUD de Lotação**
+  - 10.2 - Utilize o serviço **GET /consultas/buscar-por-endereco-funcional** para buscar o endereço funcional (da unidade onde o servidor é lotado) a partir de uma parte do nome do servidor efetivo. 
+
+
 
 ## Arquitetura da Solução
 
