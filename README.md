@@ -2,7 +2,7 @@
 
 ### Número da inscrição: 8781
 ### CPF: 05921855162
-### Perfil: DESENVOLVEDOR JAVA (BACK-END) - SÊNIOR
+### Perfil: DESENVOLVEDOR JAVA (BACK-END) - PLENO
 ### Contato: (65) 9 9229-0278
 
 # Projeto: Sistema de Gestão com Clean Architecture
